@@ -1,13 +1,13 @@
 <header>
     <nav>
-        <a href="">HOME</a>
-        <a href="">O CASAL</a>
-        <a href="">CERIMÔNIA & RECEPÇÃO</a>
-        <a href="">TRAJES</a>
+        <button type="button">HOME</button>
+        <button type="button" (click)="scrollTo('casal-stats')">O CASAL</button>
+        <button type="button">CERIMÔNIA E RECEPÇÃO</button>
+        <button type="button">TRAJES</button>
     </nav>
 </header>
-<section id="casal" class="bg-padrao">
-    <p>ALERRAN E ALICE</p>
+<section id="nome-casal" class="bg-padrao">
+    <p>ALERRAN & ALICE</p>
 </section>
 <section id="fotos-previas" class="bg-padrao">
     <img src="assets\casal\IMG-20250731-WA0088.jpg" alt="">
@@ -41,8 +41,21 @@
 <section id="foto-casal" class="bg-padrao">
     <img src="assets\casal\IMG-20250803-WA0009.jpg" alt="">
 </section>
-<section>
-    <p>Se você está aqui é porque ocupa um espaço importante nas nossas vidas</p>
-    <p>Nosso grande dia está se aproximando e estamos extremamente felizes em compartilhar com você este momento tão especial</p>
-    <p>E aqui você encontrará os detalhes sobre o nosso casamento. Já estamos na contagem regressiva e esperamos que você possa estar ao nosso lado para celebrar este dia!</p>
+<section id="texto-convidados">
+    <p>Se você está aqui é porque ocupa um espaço importante nas nossas vidas <br> <br>
+    Nosso grande dia está se aproximando e estamos extremamente felizes em compartilhar com você este momento tão especial <br> <br>
+    E aqui você encontrará os detalhes sobre o nosso casamento. Já estamos na contagem regressiva e esperamos que você possa estar ao nosso lado para celebrar este dia!
+    </p>
+</section>
+<section id="casal-stats">
+    <span>O CASAL</span>
+    <div id="retratos-casal">
+        <img src="assets\casal\Ellipse 1.svg" alt="">
+        <img src="assets\casal\Ellipse 2.svg" alt="">
+    </div>
+    <div id="stats">
+        <p>2 anos e 5 meses de namoro</p>
+        <p>{{tempoNoivado}} meses de noivado</p>
+        <p></p>
+    </div>
 </section>

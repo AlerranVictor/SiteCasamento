@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-home',
@@ -8,6 +8,7 @@ import { Component } from '@angular/core';
 export class HomeComponent {
 
   dataCasamento: Date = new Date('2026-10-24T16:30:00')
+  tempoNoivado: number = this.mesesNoivado()
   tempoRestante: any = {}
   private intervalId!: number
 
@@ -46,4 +47,22 @@ export class HomeComponent {
     }
   }
 
+  mesesNoivado(): number {
+    let data: Date = new Date()
+    let meses: number = data.getMonth() + 1
+    if(data.getDate() >= 8){
+      meses++
+      return meses
+    }
+    return meses
+  }
+
+  scrollTo(id: string){
+    const element = document.getElementById(id)
+    if(element){
+      element.scrollIntoView({
+        behavior: 'smooth'
+      })
+    }
+  }
 }
