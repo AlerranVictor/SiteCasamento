@@ -2,19 +2,19 @@
     <nav>
         <button type="button">HOME</button>
         <button type="button" (click)="scrollTo('casal-stats')">O CASAL</button>
-        <button type="button">CERIMÔNIA E RECEPÇÃO</button>
+        <button type="button" (click)="scrollTo('cerimoniarecepcao')">CERIMÔNIA E RECEPÇÃO</button>
         <button type="button">TRAJES</button>
     </nav>
 </header>
-<section id="nome-casal" class="bg-padrao">
+<section id="nome-casal" class="bg-padrao centralizar">
     <p>ALERRAN & ALICE</p>
 </section>
 <section id="fotos-previas" class="bg-padrao">
-    <img src="assets\casal\IMG-20250731-WA0088.jpg" alt="">
-    <img src="assets\casal\IMG-20250731-WA0090.jpg" alt="">
-    <img src="assets\casal\IMG-20250731-WA0102.jpg" alt="">
+    <img src="assets\casal\IMG-20250731-WA0088.jpg">
+    <img src="assets\casal\IMG-20250731-WA0090.jpg">
+    <img src="assets\casal\IMG-20250731-WA0102.jpg">
 </section>
-<section id="data-casamento" class="bg-padrao">
+<section id="data-casamento" class="bg-padrao centralizar">
     <p>24.10.2026</p>
 </section>
 <section id="contagem-regressiva">
@@ -39,19 +39,19 @@
     </div>
 </section>
 <section id="foto-casal" class="bg-padrao">
-    <img src="assets\casal\IMG-20250803-WA0009.jpg" alt="">
+    <img src="assets\casal\IMG-20250803-WA0009.jpg">
 </section>
-<section id="texto-convidados">
+<section id="texto-convidados" class="centralizar">
     <p>Se você está aqui é porque ocupa um espaço importante nas nossas vidas <br> <br>
     Nosso grande dia está se aproximando e estamos extremamente felizes em compartilhar com você este momento tão especial <br> <br>
     E aqui você encontrará os detalhes sobre o nosso casamento. Já estamos na contagem regressiva e esperamos que você possa estar ao nosso lado para celebrar este dia!
     </p>
 </section>
-<section id="casal-stats">
+<section id="casal-stats" class="centralizar">
     <span>O CASAL</span>
-    <div id="retratos-casal">
-        <img src="assets\casal\Ellipse 1.svg" alt="">
-        <img src="assets\casal\Ellipse 2.svg" alt="">
+    <div id="retratos-casal" class="centralizar">
+        <img src="assets\casal\Ellipse 1.svg">
+        <img src="assets\casal\Ellipse 2.svg">
     </div>
     <div id="stats">
         <p>2 anos e 5 meses de namoro</p>
@@ -61,11 +61,20 @@
         <p>Incontáveis filmes e séries assistidos</p>
     </div>
 </section>
-<section id="carrossel-sec">
+<section class="centralizar">
     <div id="carrossel">
-        <img id="img1" class="imgcarrossel" src="assets\casal\IMG-20250731-WA0111.jpg" alt="">
-        <img id="img2" class="imgcarrossel" src="assets\casal\IMG-20250731-WA0104.jpg" alt="">
-        <img id="img3" class="imgcarrossel" src="assets\casal\IMG-20250731-WA0091.jpg" alt="">
-        <img id="img4" class="imgcarrossel" src="assets\casal\IMG-20250731-WA0088.jpg" alt="">
+        <img id="img1" class="imgcarrossel" src="assets\casal\IMG-20250731-WA0111.jpg">
+        <img id="img2" class="imgcarrossel" src="assets\casal\IMG-20250731-WA0104.jpg">
+        <img id="img3" class="imgcarrossel" src="assets\casal\IMG-20250731-WA0091.jpg">
+        <img id="img4" class="imgcarrossel" src="assets\casal\IMG-20250731-WA0088.jpg">
+    </div>
+</section>
+<section id="cerimoniarecepcao" class="centralizar">
+    <p>CERIMÔNIA & RECEPÇÃO</p>
+    <div id="foto-local" class="centralizar">
+        <img src="assets\casal\Group 27.png">
+    </div>
+    <div id="mapa-local" class="centralizar">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d638.1102826854866!2d-48.1915360558068!3d-1.2656817669691651!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1spt-BR!2sbr!4v1772064603707!5m2!1spt-BR!2sbr" width="90%" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
 </section>
